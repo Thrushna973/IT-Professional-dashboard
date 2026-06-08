@@ -1,0 +1,66 @@
+[
+  {
+    "id": "task-001",
+    "title": "Fix login issue on production",
+    "status": "done",
+    "priority": "high",
+    "dueDate": "2026-06-12",
+    "completed": true
+  },
+  {
+    "id": "task-002",
+    "title": "Review PR #125 on GitHub",
+    "status": "todo",
+    "priority": "medium",
+    "dueDate": "2026-06-10",
+    "completed": false
+  },
+  {
+    "id": "task-003",
+    "title": "Update dashboard UI",
+    "status": "inprogress",
+    "priority": "high",
+    "dueDate": "2026-06-15",
+    "completed": false
+  },
+  {
+    "id": "task-004",
+    "title": "Database optimization",
+    "status": "todo",
+    "priority": "high",
+    "dueDate": "2026-06-20",
+    "completed": false
+  },
+  {
+    "id": "task-005",
+    "title": "Write API documentation",
+    "status": "done",
+    "priority": "medium",
+    "dueDate": "2026-06-05",
+    "completed": true
+  },
+  {
+    "id": "task-006",
+    "title": "Deploy weather service",
+    "status": "todo",
+    "priority": "high",
+    "dueDate": "2026-06-18",
+    "completed": false
+  },
+  {
+    "id": "task-007",
+    "title": "Refactor NewsCard",
+    "status": "inprogress",
+    "priority": "low",
+    "dueDate": "2026-06-22",
+    "completed": false
+  },
+  {
+    "id": "task-008",
+    "title": "Team standup meeting",
+    "status": "done",
+    "priority": "low",
+    "dueDate": "2026-06-07",
+    "completed": true
+  }
+]

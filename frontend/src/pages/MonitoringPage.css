@@ -1,0 +1,119 @@
+.page-container {
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  color: #f5f7fb;
+  background: linear-gradient(135deg, #0f172a 0%, #1a1f3a 100%);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+  gap: 1rem;
+}
+
+.page-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.8rem;
+  color: #7c90b3;
+  margin-bottom: 0.35rem;
+  margin: 0;
+}
+
+.page-title {
+  margin: 0;
+  font-size: clamp(2rem, 2.25vw, 3rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.page-grid.page-grid--full {
+  max-width: 100%;
+  margin: 0;
+  grid-template-columns: 1fr;
+}
+
+.page-placeholder {
+  background: linear-gradient(180deg, rgba(24, 39, 68, 0.94), rgba(16, 24, 47, 0.92));
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: 0 24px 80px rgba(7, 17, 40, 0.25);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / -1;
+  transition: all 0.3s ease;
+}
+
+.page-placeholder.page-placeholder--full {
+  grid-column: 1 / -1;
+  width: 100%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.page-placeholder:hover {
+  border-color: rgba(148, 163, 184, 0.2);
+  box-shadow: 0 24px 80px rgba(7, 17, 40, 0.4);
+  background: linear-gradient(180deg, rgba(24, 39, 68, 0.98), rgba(16, 24, 47, 0.96));
+}
+
+.placeholder-content {
+  text-align: center;
+}
+
+.placeholder-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: #e2e8f0;
+}
+
+.placeholder-content p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+@media (max-width: 1023px) {
+  .page-container {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-placeholder {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .page-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  .page-placeholder {
+    padding: 1.5rem;
+    min-height: 200px;
+  }
+}
